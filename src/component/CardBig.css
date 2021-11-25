@@ -1,0 +1,35 @@
+.containerBig {
+    padding-left: 40px;
+  }
+  
+  .posterBig {
+    width: 280px;
+    height: 160px;
+    border-radius: 2px;
+    border-radius: 20px;
+  }
+    
+  #title {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Verdana;
+  }
+  
+  #asal {
+    color: rgb(175, 159, 159);
+    font-family: Verdana;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5px;
+  } 
+
+  #makna {
+    color: rgb(241, 238, 238);
+    font-family: Verdana;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+  } 
+

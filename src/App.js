@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Route, NavLink, Routes, Navigate } from "react-router-dom";
+import { HiHome } from "react-icons/hi";
+import { MdGroup } from "react-icons/md";
+import { FaBookOpen } from "react-icons/fa";
+ 
+import "./App.css";
+import Batik from "./pages/Batik";
+import Profile from "./pages/Profile";
+import Detail from "./pages/Detailbatik";
+import Information from "./pages/Information";
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <BrowserRouter>
+      <header>
+        <p id="titleGroup">BATIKPEDIA</p>
       </header>
-    </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/batik" />} />
+        <Route path="/batik" element={<Batik />}></Route>
+        <Route path="/information" element={<Information />}></Route>
+        <Route path="/batik/detail" element={<Detail />}></Route>
+        <Route path="/information/detail" element={<Detail />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+      </Routes>
+      <footer>
+        <NavLink to="/batik" className="iconWrapper">
+          <HiHome className="icon" />
+          Home
+        </NavLink>
+        <NavLink to="/information" className="iconWrapper">
+          <FaBookOpen className="icon" />
+          Information
+        </NavLink>
+        <NavLink to="/profile" className="iconWrapper">
+          <MdGroup className="icon" />
+          Profile
+        </NavLink>
+      </footer>
+    </BrowserRouter>
   );
 }
-
+ 
 export default App;
+

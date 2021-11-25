@@ -1,0 +1,66 @@
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .card-container {
+    padding: 25px;
+    background-color: rgb(65, 65, 233);
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .card-top-container,
+  .card-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    flex: 1;
+    max-width: 100px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 2px;
+  }
+  
+  .profile-id {
+    flex: 2;
+  }
+  
+  .profile-id p {
+    text-align: center;
+  }
+  
+  .profile-id .name {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .divider {
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 4px dashed white;
+  }
+  
+  .social-network {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .social-network img {
+    max-width: 20%;
+  }
+  
+  .social-network p {
+    margin-left: 5px;
+  } 
