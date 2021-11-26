@@ -19,6 +19,7 @@ export default function Detailinformation() {
           <Card
             nama={item.nama}
             img={item.gambar}
+            asal={item.asal}
             onClick={() => navigate(`detail/`, { state: item })}
           />
           

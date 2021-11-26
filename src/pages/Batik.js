@@ -21,6 +21,7 @@ export default function Detailbatik() {
           <CardSmall
             nama={item.nama}
             img={item.gambar}
+            asal={item.asal}
             size={STAR_SIZE}
             color={STAR_COLOR}
             onClick={() => navigate(`detail/`, { state: item })}

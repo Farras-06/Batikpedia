@@ -24,3 +24,11 @@
     font-weight: bold;
     font-family: Verdana;
   }
+
+#asal {
+    color: rgb(243, 211, 211);
+    font-family: Verdana;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5px;
+  }
