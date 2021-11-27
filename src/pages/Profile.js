@@ -5,9 +5,9 @@ export default function Profile() {
 
   const data = [
     {
-      name: "Batikpedia App",
+      name: "Batikpedia",
       pict: "https://blog.mizanstore.com/wp-content/uploads/2017/10/membatik_by_nakysa06-724x1024.jpg",
-      locations: "Boyolali",
+      locations: "Universitas Diponegoro",
       instagram: "ilham_frs",
       github: "Farras-06"
     },
